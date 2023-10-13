@@ -5,10 +5,10 @@ class q1;
   rand int a[];
   constraint x {a.size==8;}
   constraint y {foreach(a[i])
-    if (a%2==0)
-      a[i]==(i+1)*5;
-       else
-         a[i]==-(i+1)*5;
+                     if (a[i]%2==0)
+                         a[i]==(i+1)*5;
+                     else
+                         a[i]==-(i+1)*5;
                }  
    
   function void post_randomize;
@@ -18,9 +18,13 @@ class q1;
 endclass
 
 module top;
+  
   q1 q;
+  
   initial begin
-    q=new;
+    
+    q=new();
     q.randomize;
+    
   end
 endmodule
