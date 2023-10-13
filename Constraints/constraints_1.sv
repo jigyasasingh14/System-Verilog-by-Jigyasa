@@ -28,3 +28,5 @@ module top;
     
   end
 endmodule
+
+//OUTPUT-Randomized data is '{-5, 10, -15, 20, -25, 30, -35, 40} 
