@@ -5,7 +5,7 @@ class q1;
   rand int a[];
   constraint x {a.size==8;}
   constraint y {foreach(a[i])
-                     if (a[i]%2==0)
+                     if (i%2==0)
                          a[i]==(i+1)*5;
                      else
                          a[i]==-(i+1)*5;
